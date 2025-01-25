@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+.facebook-title {
+    color: #1877f2;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+    color: #606770;
+    margin-bottom: 30px;
+}
+.login-container {
+}
+.forgot-password {
+}
+.password-recovery {
+}
+.footer {
+}
+.img {
+}
+
+
