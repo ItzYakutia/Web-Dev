@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     text-align: center;
+    margin-top: 175px;
 }
 
 .facebook-title {
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 364px;
     font-family: inherit;
 }
 
@@ -82,6 +83,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
 .create-account {
     font-family: inherit;
     background-color: #42b72a;
@@ -103,35 +108,37 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #36a420;
 }
 
-.footer{
-    margin-top: 50px;
-    text-align: center;
-    color: #606770;
-    font-size: 12px;
+.pageFooter{
+    background-color: #f0f2f5;
+    margin: 0 px;
+    width: 980px;
 }
 
 span{
-    margin-top: 50px;
-    color: #606770;
-    font-size: 12px;
-    margin: 10px;
+    color: #737373;
+    margin: 5px;
 }
 
-.footer a {
-    color: #606770;
+.pageFooter a {
+    color: #737373;
     text-decoration: none;
     margin: 0 5px;
 }
 
-.footer a:hover {
+.pageFooter a:hover {
     text-decoration: underline;
 }
 
 .page-link {
+    border-top: none;
+    color: #1c1e21;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    padding-top: 0;
     margin-top: 28px;
-    color: #606770;
     text-align: center;
+    margin-left: 510px;
 }
 
 .page-link a {
@@ -144,11 +151,9 @@ span{
 }
 
 .straight-line{
-    align-items: center;
     border-bottom: 1px solid #dadde1;
     display: flex;
     margin: 20px 16px;
-    text-align: center;
 }
 
 .div1{
@@ -185,6 +190,7 @@ h2 {
 .sp_YbiIuPczOY__2x.sx_c431d7{
     background-position: -21px -34px;
 }
+
 .img {
     position: absolute;
     top: 1px;
@@ -201,4 +207,51 @@ body, button, input, label, select, td, textarea {
     font-size: 1px;
     height: 8px;
     margin-bottom: 8px;
+}
+
+.languages{
+    padding-top: 12px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.facebook-titles{
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-right: 32px;
+    width: 580px;
+    padding: 85px 0 16px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    margin: 0px;
+    text-align: left;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.content{
+    display:flex;
+    justify-content: space-between;
+}
+
+.Footer{
+    margin-top: 170px;
+    padding: 25px;
+
 }
