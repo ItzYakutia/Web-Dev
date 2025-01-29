@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.login-form {
+    max-width: 350px;
+    max-height: 588px;
+    border: 1px solid rgb(54, 54, 54);
+}
+.form-inner{
+    margin: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-inner > *{
+    text-align: center;
+}
+.upper-form {
+    
+}
+.content {
+}
+.content-logo {
+    max-width: 175px;
+    margin: auto;
+}
+.content-logo img{
+    width: 100%;
+}
+.content-form {
+    
+}
+.content-item {
+    width: 268px;
+    height: 38px;
+}
+.content-input {
+}
+.button {
+    font-family: inherit;
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button {
+}
+.content-or {
+}
+.content-forgot {
+}
+.content-facebook {
+}
+.fa {
+}
+.fa-brands {
+}
+.fa-facebook {
+}
+.content-link {
+}
+.content-password {
+    
+}
+.content-pass {
+}
+.middle-form {
+    border: 1px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.middle-form p{
+    font-size: 14px;
+}
+
+.middle-form a{
+}
+.sign {
+    display: flex;
+    justify-content: center;
+}
+.sign-text {
+}
+.sign-link {
+    margin-left: 3px;
+}
+.lower-form {
+}
+.app-text {
+}
+.app-icons{
+    display: flex;
+}
+.app-icon:first-child{
+    margin-right: 10px;
+}
+.app-icon {
+    max-width: 136px;
+}
+
+.app-icon img{
+    width: 100%;
+}
+
+p, a{
+    margin: 0;
+    padding: 0;
+}
+
+.phone img{
+    max-width: 381px;
+    max-height: 581px;
+    padding-right: 32px;
+}
+
+.main-page{
+    padding-top: 100px;
+    justify-content: space-between;
+    display: flex;
+}
+
+input{
+    width: 38ch;
+    font-size: 12px;
+    border: 1px solid rgb(219,219,219);
+    margin-bottom: 8px;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
+}
+
+.content-or{
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    color: rgb(169,169,169);
+}
+
+hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgb(169,169,169);
+}
+
+.content-facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
