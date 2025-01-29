@@ -5,6 +5,8 @@ body{
     display: flex;
     justify-content: center;
     color: white;
+    font: inherit;
+    font-family: Helvetica;
 }
 a{
     text-decoration: none;
@@ -12,6 +14,10 @@ a{
 .login-form {
     max-width: 350px;
     max-height: 588px;
+
+}
+
+.box1{
     border: 1px solid rgb(54, 54, 54);
 }
 .form-inner{
@@ -19,50 +25,65 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    max-width: 100%;
+    max-height: 100%;
 }
 .form-inner > *{
     text-align: center;
 }
 .upper-form {
     
+
 }
 .content {
 }
 .content-logo {
     max-width: 175px;
     margin: auto;
+    padding-bottom: 25px;
 }
 .content-logo img{
     width: 100%;
 }
 .content-form {
-    
+
 }
 .content-item {
     width: 268px;
     height: 38px;
 }
 .content-input {
-}
-.button {
-    font-family: inherit;
-    width: 100%;
-    padding: 12px;
-    background-color: #1877f2;
+    background-color: black;
+    border: 1px solid rgb(54, 54, 54);
     color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    height: 32px;
+    padding: 12px;
+    font-weight: bold;
+    background-color: rgb(0, 149, 246);;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
 }
+
+
 .content-or {
 }
 .content-forgot {
+    font-size: 14px;
 }
 .content-facebook {
+    font-size: 14px;
+    padding: 20px;
 }
 .fa {
 }
@@ -75,9 +96,19 @@ a{
 .content-password {
     
 }
+.content-password a:link{
+    color: white;
+}
+.content-password a:havor{
+    color: white;
+}
+.content-password a:visited{
+    color: white;
+}
 .content-pass {
 }
 .middle-form {
+    
     border: 1px solid rgb(54, 54, 54);
     display: flex;
     justify-content: center;
@@ -87,6 +118,7 @@ a{
     padding: 13px;
     margin-top: 10px;
     gap: 5px;
+    font-size: 12px;
 }
 
 .middle-form p{
@@ -103,13 +135,23 @@ a{
 }
 .sign-link {
     margin-left: 3px;
+    font-weight: bold;
 }
 .lower-form {
+    
 }
 .app-text {
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 35px;
+    padding: 5px;
 }
 .app-icons{
     display: flex;
+    margin-left: 33px;
+    margin-top: 10px;
+    
 }
 .app-icon:first-child{
     margin-right: 10px;
@@ -156,6 +198,8 @@ input{
     display: flex;
     gap: 20px;
     color: rgb(169,169,169);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 hr {
@@ -168,5 +212,47 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
+    font-weight: bold;
+}
+.content-facebook a:link, a:visited{
+    color: rgb(0, 149, 246);
+}
+.content-facebook a:hover{
+    color: white;
+}
+
+.content-button{
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.footer p:hover{
+    text-decoration: underline;
+}
+.pageFooter p{
+    display: inline;
+    margin-right: 10px;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+.last-footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+    margin:auto;
+}
+
+::placeholder{
+    color: rgb(168, 168, 168);
 }
