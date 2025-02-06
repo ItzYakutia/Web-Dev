@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readNumber(){
+            let n;
+            while (!isFinite(n)) {
+              n = prompt("Enter a number please?", 0);
+            };
+            if (n === null || n === '') return null;
+            return +n;
+        }
+    </script>
+</body>
+</html>
