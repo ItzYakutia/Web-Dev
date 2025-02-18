@@ -1,0 +1,28 @@
+<div class="product-list">
+    <div *ngFor="let product of products" class="product-card">
+      <div class="product-gallery">
+        <img *ngFor="let imageUrl of product.imageUrls" [src]="imageUrl" alt="{{ product.name }}" class="product-image" />
+      </div>
+  
+      <div class="product-details">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Rating: {{ product.rating }} / 5 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Star%2A.svg/1920px-Star%2A.svg.png" alt="Rating" class="rating-logo"></p>
+  
+        <div class="product-actions">
+            <button (click)="share(product, 'whatsapp')" class="share-button-wha">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="share-icon" />
+              Share on WhatsApp
+            </button>
+            <button (click)="share(product, 'telegram')" class="share-button-tg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png" alt="Telegram" class="share-icon" />
+              Share on Telegram
+            </button>
+          </div>
+          
+  
+        <a [href]="product.link" target="_blank" class="product-link">View Product</a>
+      </div>
+    </div>
+  </div>
+  
