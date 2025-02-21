@@ -1,0 +1,52 @@
+<div class='category-buttons'>
+  <label for="category">Выберите категорию:</label>
+  <select id="category" (change) = "selectCategory($event)">
+    <option *ngFor = "let category of categories" [value]="category">
+      {{category}}
+    </option>
+  </select>
+</div>
+
+<div class="product-list">
+  <div *ngFor="let product of getfilteredProducts()" class="product-card">
+
+      <div class="product-gallery">
+        <img *ngFor="let imageUrl of product.imageUrls" [src]="imageUrl" alt="{{ product.name }}" class="product-image" />
+      </div>
+
+      <div class="product-details">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Rating: {{ product.rating }} / 5 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Star%2A.svg/1920px-Star%2A.svg.png" alt="Rating" class="rating-logo"></p>
+        <p>❤️ {{ product.likes }}</p>
+  
+        <div class="product-actions">
+          <div class="button-group">
+          <button (click) = "likeProduct(product.id)" id="likeButton" class="like-button">
+            <svg id="likeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </button>
+          <button (click) = "removeProduct(product.id)" id="deleteButton" class="delete-button">
+            <svg id="deleteIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+            </svg>
+            Delete
+          </button>
+        </div>
+          <button (click)="share(product, 'whatsapp')" class="share-button-wha">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="share-icon" />
+              Share on WhatsApp
+          </button>
+          <button (click)="share(product, 'telegram')" class="share-button-tg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png" alt="Telegram" class="share-icon" />
+              Share on Telegram
+          </button>
+        </div>
+          
+  
+        <a [href]="product.link" target="_blank" class="product-link">View Product</a>
+      </div>
+    </div>
+  </div>
+  
