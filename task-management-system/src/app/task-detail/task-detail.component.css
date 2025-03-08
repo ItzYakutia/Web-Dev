@@ -1,0 +1,42 @@
+.task-detail {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .task-detail h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .task-detail p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .task-detail .deadline {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .task-detail .status {
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  .task-detail button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .task-detail button:hover {
+    background-color: #0056b3;
+  }

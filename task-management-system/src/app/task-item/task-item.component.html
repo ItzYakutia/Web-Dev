@@ -1,0 +1,8 @@
+<div class="task-item" (click)="onTaskClick()"> 
+  <h3>{{ title }}</h3>
+  <p>{{ description }}</p>
+  <p><strong>Category:</strong> {{ category }}</p>
+  <p><strong>Deadline:</strong> {{ deadline }}</p>
+  <p><strong>Status:</strong> {{ status }}</p>
+  <button (click)="markAsCompleted()" *ngIf="status !== 'Completed'">Mark as Completed</button>
+</div>

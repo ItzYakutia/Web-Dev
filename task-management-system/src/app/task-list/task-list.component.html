@@ -1,0 +1,12 @@
+<div class="task-list">
+  <h2>Task List</h2>
+  <app-task-item
+    *ngFor="let task of tasks"
+    [title]="task.title"
+    [description]="task.description"
+    [category]="task.category"
+    [status]="task.status"
+    [deadline]="task.deadline"
+    (taskClicked)="onTaskClicked(task.id)"
+  ></app-task-item>
+</div>
