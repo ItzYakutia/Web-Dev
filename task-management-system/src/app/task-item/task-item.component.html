@@ -4,5 +4,5 @@
   <p><strong>Category:</strong> {{ category }}</p>
   <p><strong>Deadline:</strong> {{ deadline }}</p>
   <p><strong>Status:</strong> {{ status }}</p>
-  <button (click)="markAsCompleted()" *ngIf="status !== 'Completed'">Mark as Completed</button>
+  <button (click)="markAsCompleted($event)" *ngIf="status !== 'Completed'">Mark as Completed</button>
 </div>

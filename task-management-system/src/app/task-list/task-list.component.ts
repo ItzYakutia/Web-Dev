@@ -13,7 +13,7 @@ import { NgFor } from '@angular/common';
 export class TaskListComponent {
   tasks = [
     { id: 1, title: 'Task 1', description: 'Need for my job', category: 'Work', status: 'Pending', deadline: "18.03.25 6pm" },
-    { id: 2, title: 'Task 2', description: 'Description 2', category: 'Personal', status: 'Pending', deadline: "18.03.25 6pm" }
+    { id: 2, title: 'Task 2', description: 'Description', category: 'Personal', status: 'Pending', deadline: "18.03.25 6pm" }
   ];
 
   onTaskCompleted(taskId: number) {

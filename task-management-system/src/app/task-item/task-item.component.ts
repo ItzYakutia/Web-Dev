@@ -12,7 +12,8 @@ import { NgIf } from '@angular/common';
 export class TaskItemComponent extends BaseTaskComponent {
   @Output() taskCompleted = new EventEmitter<void>();
   @Output() taskClicked = new EventEmitter<void>(); 
-  markAsCompleted() {
+  markAsCompleted(event: Event) { 
+    event.stopPropagation(); 
     this.status = 'Completed';
     this.taskCompleted.emit();
   }
