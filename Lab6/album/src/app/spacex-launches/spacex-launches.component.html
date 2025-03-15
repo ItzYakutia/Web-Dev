@@ -1,0 +1,13 @@
+<h2> SpaceX launches</h2>
+<app-launch-filter (filterChange)="filterLaunches()"></app-launch-filter>
+
+<ul>
+    <li *ngFor="let launch of filteredLaunches">
+        {{launch.mission_name}}-{{launch.rocket_name}} 
+    <span *ngIf="launch.launch_success" style='color: green'>
+        Yep
+    </span>
+    <span *ngIf="launch.launch_success" style='color: red'>
+        Nope
+    </span> </li>
+</ul>
