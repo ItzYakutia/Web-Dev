@@ -1,0 +1,27 @@
+<div *ngIf="company; else loading" class="company-container">
+    <h2>Name: {{ company.name }}</h2>
+    <p>Description: {{ company.description }}</p>
+    <p>City: {{ company.city }} </p>
+    <p>Address: {{ company.address }}</p>
+  
+    <h3>Vacancies</h3>
+    <div *ngIf="vacancies.length > 0; else noVacancies">
+      <ul>
+        <li *ngFor="let vacancy of vacancies">
+          <strong>Name: {{ vacancy.name }}</strong> - Salary: {{ vacancy.salary | currency }}
+          <p>Description: {{ vacancy.description }}</p>
+        </li>
+      </ul>
+    </div>
+  
+    <ng-template #noVacancies>
+      <p>No vacancies available for this company.</p>
+    </ng-template>
+  
+    <a routerLink="/" class="back-link">← Back to companies</a>
+  </div>
+  
+  <ng-template #loading>
+    <p>Loading company details...</p>
+  </ng-template>
+  

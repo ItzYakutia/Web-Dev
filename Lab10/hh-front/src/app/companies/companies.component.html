@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Companies</h1>
+    @if (isLoading) {
+      <p>Loading companies...</p>
+    } @else if (errorMessage) {
+      <p class="error">{{ errorMessage }}</p>
+    } @else {
+      <ul class="company-list">
+        @for (company of companies; track company.id) {
+          <li>
+            <a [routerLink]="['/companies', company.id]">
+              {{ company.name }} ({{ company.city }})
+            </a>
+          </li>
+        } @empty {
+          <p>No companies found</p>
+        }
+      </ul>
+    }
+  </div>

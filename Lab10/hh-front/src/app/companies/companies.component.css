@@ -1,0 +1,30 @@
+.container { 
+    max-width: 800px; 
+    margin: 2rem auto; 
+}
+
+.company-list { 
+    list-style: none;
+    padding: 0; 
+}
+
+.company-list li { 
+    margin: 0.5rem 0; 
+}
+
+.company-list a {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+}
+
+.company-list a:hover { 
+    background-color: #f5f5f5; 
+}
+
+.error { 
+    color: red; 
+}

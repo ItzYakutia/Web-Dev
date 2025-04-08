@@ -1,0 +1,57 @@
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+li {
+background: #f9f9f9;
+border: 1px solid #ddd;
+padding: 1.5rem;
+margin-bottom: 1rem;
+border-radius: 8px;
+transition: box-shadow 0.2s ease;
+}
+
+li:hover {
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+font-size: 1.75rem;
+margin-bottom: 0.5rem;
+color: #333;
+}
+
+p {
+margin: 0.25rem 0 0.75rem;
+color: #555;
+line-height: 1.5;
+}
+
+h3 {
+margin-top: 2rem;
+font-size: 1.5rem;
+color: #444;
+}
+
+.back-link {
+display: inline-block;
+margin-top: 2rem;
+color: #1976d2;
+text-decoration: none;
+font-weight: 500;
+font-size: 1rem;
+}
+
+.back-link:hover {
+text-decoration: underline;
+}
+
+.company-container {
+max-width: 800px;
+margin: 0 auto;
+text-align: left;
+}
+  
+  
